@@ -35,6 +35,19 @@ grunt.initConfig({
   }
 });
 ```
+
+Then run:
+
+```
+> $ grunt mongobackup:dump
+```
+
+Or:
+
+```
+> $ grunt mongobackup:restore
+```
+
 ### Gulp
 
 ```javascript
@@ -57,6 +70,19 @@ gulp.task('mongorestore', function() {
   });
 });
 ```
+
+Then run:
+
+```
+> $ gulp mongodump
+```
+
+Or:
+
+```
+> $ gulp mongorestore
+```
+
 
 ## Options
 
