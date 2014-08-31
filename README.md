@@ -9,7 +9,7 @@
 Install package with NPM and add it to your development dependencies:
 
 ```
-$ npm install mongobackup --save
+$ npm install mongobackup --save-dev
 ```
 
 ## Usage
