@@ -16,21 +16,21 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 
 ```javascript
 grunt.initConfig({
-	mongobackup: {
-		dump : {
-			options: {
-				host : 'localhost',
-				out : './dumps/mongo'
-			}
-		},
-		restore: {
-			options: {
-				host : 'localhost',
-				drop : true,
-				path : './dumps/mongo/testdb'
-			}
-		}
-	}
+  mongobackup: {
+    dump : {
+      options: {
+        host : 'localhost',
+        out : './dumps/mongo'
+      }
+    },
+    restore: {
+      options: {
+        host : 'localhost',
+        drop : true,
+        path : './dumps/mongo/testdb'
+      }
+    }
+  }
 });
 ```
 ### Gulp
