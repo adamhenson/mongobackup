@@ -20,7 +20,7 @@ grunt.initConfig({
 		dump : {
 			options: {
 				host : 'localhost',
-        out : './dumps/mongo'
+				out : './dumps/mongo'
 			}
 		},
 		restore: {
