@@ -1,7 +1,7 @@
 {
   "name": "mongobackup",
   "description": "A Grunt and Gulp compatible plugin to import or export MongoDB data.",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "author": {
     "name": "Adam Henson",
     "email": "adamhenson1979@gmail.com"
