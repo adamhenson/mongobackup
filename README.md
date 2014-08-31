@@ -12,7 +12,9 @@ Install package with NPM and add it to your development dependencies:
 
 Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
 
-`grunt.loadNpmTasks('mongobackup');`
+```javascript
+grunt.loadNpmTasks('mongobackup');
+```
 
 Configure via `grunt.initConfig()`.
 
@@ -39,13 +41,13 @@ grunt.initConfig({
 Then run:
 
 ```
-> $ grunt mongobackup:dump
+$ grunt mongobackup:dump
 ```
 
 Or:
 
 ```
-> $ grunt mongobackup:restore
+$ grunt mongobackup:restore
 ```
 
 ### Gulp
@@ -74,15 +76,14 @@ gulp.task('mongorestore', function() {
 Then run:
 
 ```
-> $ gulp mongodump
+$ gulp mongodump
 ```
 
 Or:
 
 ```
-> $ gulp mongorestore
+$ gulp mongorestore
 ```
-
 
 ## Options
 
