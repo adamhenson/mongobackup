@@ -2,7 +2,7 @@
 
 > A Grunt and Gulp compatible plugin to import or export MongoDb data by launching a child process, passing the commands for [mongodump](http://docs.mongodb.org/manual/reference/program/mongodump/) and [mongorestore](http://docs.mongodb.org/manual/reference/program/mongorestore/) [MongoDB Package Components](http://docs.mongodb.org/manual/reference/program/).
 >
-> This plugin is similar to [grunt-mongo-backup](https://github.com/seogrady/grunt-mongo-backup) in that it spawns a child process. The difference in **mongobackup** is that it is compatible with both Grunt and Gulp. Another difference is that it provides a means to pass separate options for both dump and restore operations.
+> This plugin is similar to [grunt-mongo-backup](https://github.com/seogrady/grunt-mongo-backup) in that it spawns a child process. The difference in **mongobackup** is that it is compatible with both Grunt and Gulp. Another difference of **mongobackup** is that it provides a means to pass separate options for both dump and restore operations.
 
 ## Installation
 
