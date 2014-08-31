@@ -8,7 +8,6 @@ module.exports = function(manager) {
 
     var opts = this.options();
     var task = this.target;
-    var done = this.async();
 
     if(['dump','restore'].indexOf(task) === -1) {
 

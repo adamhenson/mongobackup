@@ -14,6 +14,8 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 
 `grunt.loadNpmTasks('mongobackup');`
 
+Configure via `grunt.initConfig()`.
+
 ```javascript
 grunt.initConfig({
   mongobackup: {
