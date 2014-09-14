@@ -12,6 +12,10 @@ Install package with NPM and add it to your development dependencies:
 $ npm install mongobackup --save-dev
 ```
 
+## Support
+
+As this plugin depends on the node [child_process](http://nodejs.org/api/child_process.html#child_process_child_process_spawn_command_args_options) module and the spawn method, it doesn't yet support Windows systems.
+
 ## Usage
 
 ### Grunt
