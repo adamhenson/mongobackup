@@ -10,6 +10,14 @@ module.exports = {
 
   restore : function(opts) {
     var spawn = new Spawn("mongorestore", opts);
-  }
+  },
+
+  export : function(opts) {
+    var spawn = new Spawn("mongoexport", opts);
+  },
+
+  import : function(opts) {
+    var spawn = new Spawn("mongoimport", opts);
+  }  
 
 };
