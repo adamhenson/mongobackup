@@ -16,6 +16,8 @@ $ npm install mongobackup --save-dev
 
 As this plugin depends on the node [child_process](http://nodejs.org/api/child_process.html#child_process_child_process_spawn_command_args_options) module and the spawn method, it doesn't yet support Windows systems.
 
+Tested on MongoDB 3.2 >.
+
 ## Usage
 
 ### Grunt
@@ -39,6 +41,7 @@ grunt.initConfig({
     },
     restore: {
       options: {
+        db : 'testdb',
         host : 'localhost',
         drop : true,
         path : './dumps/mongo/testdb'
@@ -97,4 +100,4 @@ $ gulp mongorestore
 
 ## Options
 
-- Any provided options are passed to [mongodump](http://docs.mongodb.org/manual/reference/program/mongodump/) and [mongorestore](http://docs.mongodb.org/manual/reference/program/mongorestore/). The boolean value `true` should be used for options that don't accept a passed value, per the docs linked in the previous sentence.
+- Any provided options (such as `host`, `out`, etc) are passed as arguments to [mongodump](http://docs.mongodb.org/manual/reference/program/mongodump/) and [mongorestore](http://docs.mongodb.org/manual/reference/program/mongorestore/). All arguments available in these two MongoDB Package Components are available as options. The boolean value `true` should be used for free standing arguments that don't accept a value, per the docs linked above.
