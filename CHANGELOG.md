@@ -1,5 +1,5 @@
 # gulp-mongobackup changelog
 
-## 0.1.9
+## 0.2.0
 
 - Update README, to support MongoDB 3.2 >

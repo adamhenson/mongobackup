@@ -79,6 +79,7 @@ gulp.task('mongodump', function() {
 // mongorestore - restore 'testdb' database to localhost
 gulp.task('mongorestore', function() {
   mongobackup.restore({
+    db : 'testdb',
     host : 'localhost',
     drop : true,
     path : './dumps/mongo/testdb'
