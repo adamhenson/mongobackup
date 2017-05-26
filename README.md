@@ -50,6 +50,12 @@ grunt.initConfig({
         drop : true,
         path : './dumps/mongo/testdb'
       }
+    },
+    import: {
+      // options
+    },
+    export: {
+      // options
     }
   }
 });
@@ -65,6 +71,18 @@ Or:
 
 ```
 $ grunt mongobackup:restore
+```
+
+Or:
+
+```
+$ grunt mongobackup:import
+```
+
+Or:
+
+```
+$ grunt mongobackup:export
 ```
 
 ### Gulp
@@ -87,6 +105,18 @@ gulp.task('mongorestore', function() {
     host : 'localhost',
     drop : true,
     path : './dumps/mongo/testdb'
+  });
+});
+
+gulp.task('mongoimport', function() {
+  mongobackup.import({
+    // options
+  });
+});
+
+gulp.task('mongoexport', function() {
+  mongobackup.export({
+    // options
   });
 });
 ```
