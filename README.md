@@ -133,6 +133,18 @@ Or:
 $ gulp mongorestore
 ```
 
+Or:
+
+```
+$ gulp mongoimport
+```
+
+Or:
+
+```
+$ gulp mongoexport
+```
+
 ## Options
 
 - Any provided options (such as `host`, `out`, etc) are passed as arguments to [mongodump](http://docs.mongodb.org/manual/reference/program/mongodump/), [mongorestore](http://docs.mongodb.org/manual/reference/program/mongorestore/), [mongoimport](https://docs.mongodb.com/manual/reference/program/mongoimport/), or [mongoexport](https://docs.mongodb.com/manual/reference/program/mongoexport/). All arguments available in these two MongoDB Package Components are available as options. The boolean value `true` should be used for free standing arguments that don't accept a value, per the docs linked above.
