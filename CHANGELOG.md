@@ -7,3 +7,7 @@
 ## 0.2.1
 
 - Badging.
+
+## 0.3.1
+
+- mongoimport and mongoexport.
