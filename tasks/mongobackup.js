@@ -9,9 +9,9 @@ module.exports = function(manager) {
     var opts = this.options();
     var task = this.target;
 
-    if(['dump','restore'].indexOf(task) === -1) {
+    if(['dump','restore', 'export', 'import'].indexOf(task) === -1) {
 
-      manager.log.writeln("Invalid argument passed: available options are 'mongobackup:dump' and 'mongobackup:restore'");
+      manager.log.writeln("Invalid argument passed: available options are 'mongobackup:dump', 'mongobackup:restore', 'mongobackup:export' and 'mongobackup:import'");
       return;
 
     } else {

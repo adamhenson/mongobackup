@@ -15,6 +15,6 @@ module.exports = function(cmd, opts) {
     else if(opts[prop] !== false) args.push('--' + prop + '=' + opts[prop]);
   }
 
-  return spawn(cmd, args, { stdio: [ process.stdin, process.stdout, process.stderr ] });
+  return spawn(cmd, args, { stdio: [ process.stdin, 'pipe', process.stderr ] });
 
 };
