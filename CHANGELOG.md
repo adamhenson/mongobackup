@@ -8,6 +8,6 @@
 
 - Badging.
 
-## 0.3.3
+## 0.3.4
 
 - mongoimport and mongoexport.
